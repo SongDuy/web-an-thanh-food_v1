@@ -158,7 +158,7 @@ const ProductDetailPage = () => {
                                     <ShoppingBagOutlinedIcon />
 
                                     <div className="w-[65px] h-[35px] grid grid-cols-[35%_65%] bg-gradient-to-tr from-yellow-200 via-yellow-300 to-yellow-400 shadow border border-white items-center justify-center rounded-md">
-                                        <span className="text-white text-shadow-black font-medium flex items-center justify-center border-r border-white">
+                                        <span className="text-white text-shadow-black font-serifBook flex items-center justify-center border-r border-white">
                                             1
                                         </span>
                                         <span className="text-black font-medium flex items-center justify-center border-l border-white">
@@ -178,7 +178,7 @@ const ProductDetailPage = () => {
                                     <HealthAndSafetyOutlinedIcon />
                                     <div className="h-full flex items-center gap-3">
                                         <div className="w-[65px] h-[35px] grid grid-cols-[35%_65%] bg-gradient-to-tr from-yellow-200 via-yellow-300 to-yellow-400 shadow border border-white items-center justify-center rounded-md">
-                                            <span className="text-white text-shadow-black font-medium flex items-center justify-center border-r border-white">
+                                            <span className="text-white text-shadow-black font-serifBook flex items-center justify-center border-r border-white">
                                                 1
                                             </span>
                                             <span className="text-black font-medium flex items-center justify-center border-l border-white">
@@ -187,7 +187,7 @@ const ProductDetailPage = () => {
                                         </div>
 
                                         <div className="w-[65px] h-[35px] grid grid-cols-[35%_65%] bg-gradient-to-tr from-red-200 via-red-300 to-red-400 shadow border border-white items-center justify-center rounded-md">
-                                            <span className="text-white text-shadow-black font-medium flex items-center justify-center border-r border-white">
+                                            <span className="text-white text-shadow-black font-serifBook flex items-center justify-center border-r border-white">
                                                 2
                                             </span>
                                             <span className="text-black font-medium flex items-center justify-center border-l border-white">
@@ -196,7 +196,7 @@ const ProductDetailPage = () => {
                                         </div>
 
                                         <div className="w-[65px] h-[35px] grid grid-cols-[35%_65%] bg-gradient-to-tr from-blue-200 via-blue-300 to-blue-400 shadow border border-white items-center justify-center rounded-md">
-                                            <span className="text-white text-shadow-black font-medium flex items-center justify-center border-r border-white">
+                                            <span className="text-white text-shadow-black font-serifBook flex items-center justify-center border-r border-white">
                                                 3
                                             </span>
                                             <span className="text-black font-medium flex items-center justify-center border-l border-white">
@@ -205,7 +205,7 @@ const ProductDetailPage = () => {
                                         </div>
 
                                         <div className="w-[65px] h-[35px] grid grid-cols-[35%_65%] bg-gradient-to-tr from-green-200 via-green-300 to-green-400 shadow border border-white items-center justify-center rounded-md">
-                                            <span className="text-white text-shadow-black font-medium flex items-center justify-center border-r border-white">
+                                            <span className="text-white text-shadow-black font-serifBook flex items-center justify-center border-r border-white">
                                                 4
                                             </span>
                                             <span className="text-black font-medium flex items-center justify-center border-l border-white">
@@ -214,7 +214,7 @@ const ProductDetailPage = () => {
                                         </div>
 
                                         <div className="w-[65px] h-[35px] grid grid-cols-[35%_65%] bg-gradient-to-tr from-zinc-200 via-zinc-300 to-zinc-400 shadow border border-white items-center justify-center rounded-md">
-                                            <span className="text-white text-shadow-black font-medium flex items-center justify-center border-r border-white">
+                                            <span className="text-white text-shadow-black font-serifBook flex items-center justify-center border-r border-white">
                                                 5
                                             </span>
                                             <span className="text-black font-medium flex items-center justify-center border-l border-white">
