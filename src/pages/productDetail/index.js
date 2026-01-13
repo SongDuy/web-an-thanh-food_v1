@@ -157,44 +157,68 @@ const ProductDetailPage = () => {
                                 <span className="h-full text-md text-black flex items-center gap-2">
                                     <ShoppingBagOutlinedIcon />
 
-                                    <div className="w-[60px] h-[35px] bg-gradient-to-tr from-yellow-200 via-yellow-300 to-yellow-400 text-white text-shadow-black font-medium shadow border border-white flex items-center justify-center rounded-md">
-                                        1
+                                    <div className="w-[65px] h-[35px] grid grid-cols-[35%_65%] bg-gradient-to-tr from-yellow-200 via-yellow-300 to-yellow-400 shadow border border-white items-center justify-center rounded-md">
+                                        <span className="text-white text-shadow-black font-medium flex items-center justify-center border-r border-white">
+                                            1
+                                        </span>
+                                        <span className="text-black font-medium flex items-center justify-center border-l border-white">
+                                            1
+                                        </span>
                                     </div>
 
                                 </span>
                             </div>
                             <div className="w-full h-[65px] grid grid-cols-[20%_80%] gap-3">
                                 <span className="h-full text-md text-gray-500 flex flex-col items-start justify-center text-left">
-                                    <span>Thẻ mua hệ</span>
-                                    <span>ngũ hành</span>
+                                    <span>Thẻ mua</span>
+                                    <span>(Đang có)</span>
                                 </span>
 
                                 <div className="h-full text-md text-black flex items-center gap-2">
                                     <HealthAndSafetyOutlinedIcon />
                                     <div className="h-full flex items-center gap-3">
-                                        <div className="w-[60px] h-[35px] bg-gradient-to-tr from-yellow-200 via-yellow-300 to-yellow-400 shadow border border-white flex items-center justify-center rounded-md">
-                                            <span className="text-white text-shadow-black font-medium">
+                                        <div className="w-[65px] h-[35px] grid grid-cols-[35%_65%] bg-gradient-to-tr from-yellow-200 via-yellow-300 to-yellow-400 shadow border border-white items-center justify-center rounded-md">
+                                            <span className="text-white text-shadow-black font-medium flex items-center justify-center border-r border-white">
                                                 1
                                             </span>
-                                        </div>
-                                        <div className="w-[60px] h-[35px] bg-gradient-to-tr from-red-200 via-red-300 to-red-400 shadow border border-white flex items-center justify-center rounded-md">
-                                            <span className="text-white text-shadow-black font-medium">
-                                                388
+                                            <span className="text-black font-medium flex items-center justify-center border-l border-white">
+                                                133
                                             </span>
                                         </div>
-                                        <div className="w-[60px] h-[35px] bg-gradient-to-tr from-blue-200 via-blue-300 to-blue-400 shadow border border-white flex items-center justify-center rounded-md">
-                                            <span className="text-white text-shadow-black font-medium">
+
+                                        <div className="w-[65px] h-[35px] grid grid-cols-[35%_65%] bg-gradient-to-tr from-red-200 via-red-300 to-red-400 shadow border border-white items-center justify-center rounded-md">
+                                            <span className="text-white text-shadow-black font-medium flex items-center justify-center border-r border-white">
                                                 2
                                             </span>
-                                        </div>
-                                        <div className="w-[60px] h-[35px] bg-gradient-to-tr from-green-200 via-green-300 to-green-400 shadow border border-white flex items-center justify-center rounded-md">
-                                            <span className="text-white text-shadow-black font-medium">
-                                                4
+                                            <span className="text-black font-medium flex items-center justify-center border-l border-white">
+                                                133
                                             </span>
                                         </div>
-                                        <div className="w-[60px] h-[35px] bg-gradient-to-tr from-zinc-200 via-zinc-300 to-zinc-400 shadow border border-white flex items-center justify-center rounded-md">
-                                            <span className="text-white text-shadow-black font-medium">
-                                                6
+
+                                        <div className="w-[65px] h-[35px] grid grid-cols-[35%_65%] bg-gradient-to-tr from-blue-200 via-blue-300 to-blue-400 shadow border border-white items-center justify-center rounded-md">
+                                            <span className="text-white text-shadow-black font-medium flex items-center justify-center border-r border-white">
+                                                3
+                                            </span>
+                                            <span className="text-black font-medium flex items-center justify-center border-l border-white">
+                                                133
+                                            </span>
+                                        </div>
+
+                                        <div className="w-[65px] h-[35px] grid grid-cols-[35%_65%] bg-gradient-to-tr from-green-200 via-green-300 to-green-400 shadow border border-white items-center justify-center rounded-md">
+                                            <span className="text-white text-shadow-black font-medium flex items-center justify-center border-r border-white">
+                                                4
+                                            </span>
+                                            <span className="text-black font-medium flex items-center justify-center border-l border-white">
+                                                133
+                                            </span>
+                                        </div>
+
+                                        <div className="w-[65px] h-[35px] grid grid-cols-[35%_65%] bg-gradient-to-tr from-zinc-200 via-zinc-300 to-zinc-400 shadow border border-white items-center justify-center rounded-md">
+                                            <span className="text-white text-shadow-black font-medium flex items-center justify-center border-r border-white">
+                                                5
+                                            </span>
+                                            <span className="text-black font-medium flex items-center justify-center border-l border-white">
+                                                133
                                             </span>
                                         </div>
                                     </div>
