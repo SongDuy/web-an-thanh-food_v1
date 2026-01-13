@@ -181,8 +181,8 @@ const ProductDetailPage = () => {
                                 <span className="h-full text-md text-black flex items-center gap-2">
                                     <ShoppingBagOutlinedIcon />
 
-                                    <div className="w-[55px] h-[35px] bg-red-50 shadow border border-white flex items-center justify-center rounded-md">
-                                        <ElementGem value={10} type="earth" />
+                                    <div className="w-[60px] h-[35px] bg-red-50 shadow border border-white flex items-center justify-center rounded-md">
+                                        <ElementGem value={1} type="earth" />
                                     </div>
 
                                 </span>
@@ -196,19 +196,19 @@ const ProductDetailPage = () => {
                                 <div className="h-full text-md text-black flex items-center gap-2">
                                     <GppGoodOutlinedIcon />
                                     <div className="h-full flex items-center gap-3">
-                                        <div className="w-[55px] h-[35px] bg-red-50 shadow border border-white flex items-center justify-center rounded-md">
+                                        <div className="w-[60px] h-[35px] bg-red-50 shadow border border-white flex items-center justify-center rounded-md">
                                             <ElementGem value={1} type="earth" />
                                         </div>
-                                        <div className="w-[55px] h-[35px] bg-red-50 shadow border border-white flex items-center justify-center rounded-md">
+                                        <div className="w-[60px] h-[35px] bg-red-50 shadow border border-white flex items-center justify-center rounded-md">
                                             <ElementGem value={3} type="fire" />
                                         </div>
-                                        <div className="w-[55px] h-[35px] bg-red-50 shadow border border-white flex items-center justify-center rounded-md">
+                                        <div className="w-[60px] h-[35px] bg-red-50 shadow border border-white flex items-center justify-center rounded-md">
                                             <ElementGem value={2} type="water" />
                                         </div>
-                                        <div className="w-[55px] h-[35px] bg-red-50 shadow border border-white flex items-center justify-center rounded-md">
+                                        <div className="w-[60px] h-[35px] bg-red-50 shadow border border-white flex items-center justify-center rounded-md">
                                             <ElementGem value={4} type="wood" />
                                         </div>
-                                        <div className="w-[55px] h-[35px] bg-red-50 shadow border border-white flex items-center justify-center rounded-md">
+                                        <div className="w-[60px] h-[35px] bg-red-50 shadow border border-white flex items-center justify-center rounded-md">
                                             <ElementGem value={2} type="metal" />
                                         </div>
                                     </div>
