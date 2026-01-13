@@ -157,7 +157,10 @@ const ProductDetailPage = () => {
                                 <span className="h-full text-md text-black flex items-center gap-2">
                                     <ShoppingBagOutlinedIcon />
 
-                                    <div className="w-[65px] h-[35px] grid grid-cols-[35%_65%] bg-gradient-to-tr from-yellow-200 via-yellow-300 to-yellow-400 shadow border border-white items-center justify-center rounded-md">
+                                    <div
+                                        title="Thẻ cấp 1"
+                                        className="w-[65px] h-[35px] cursor-pointer grid grid-cols-[35%_65%] bg-gradient-to-tr from-yellow-200 via-yellow-300 to-yellow-400 shadow border border-white items-center justify-center rounded-md"
+                                    >
                                         <span className="text-white text-shadow-black font-serifBook flex items-center justify-center border-r border-white">
                                             1
                                         </span>
@@ -177,7 +180,10 @@ const ProductDetailPage = () => {
                                 <div className="h-full text-md text-black flex items-center gap-2">
                                     <HealthAndSafetyOutlinedIcon />
                                     <div className="h-full flex items-center gap-3">
-                                        <div className="w-[65px] h-[35px] grid grid-cols-[35%_65%] bg-gradient-to-tr from-yellow-200 via-yellow-300 to-yellow-400 shadow border border-white items-center justify-center rounded-md">
+                                        <div
+                                            title="Thẻ hệ thổ"
+                                            className="w-[65px] h-[35px] cursor-pointer grid grid-cols-[35%_65%] bg-gradient-to-tr from-yellow-200 via-yellow-300 to-yellow-400 shadow border border-white items-center justify-center rounded-md"
+                                        >
                                             <span className="text-white text-shadow-black font-serifBook flex items-center justify-center border-r border-white">
                                                 1
                                             </span>
@@ -186,39 +192,51 @@ const ProductDetailPage = () => {
                                             </span>
                                         </div>
 
-                                        <div className="w-[65px] h-[35px] grid grid-cols-[35%_65%] bg-gradient-to-tr from-red-200 via-red-300 to-red-400 shadow border border-white items-center justify-center rounded-md">
+                                        <div
+                                            title="Thẻ cấp 2"
+                                            className="w-[65px] h-[35px] cursor-pointer grid grid-cols-[35%_65%] bg-gradient-to-tr from-red-200 via-red-300 to-red-400 shadow border border-white items-center justify-center rounded-md"
+                                        >
                                             <span className="text-white text-shadow-black font-serifBook flex items-center justify-center border-r border-white">
                                                 2
                                             </span>
                                             <span className="text-black font-medium flex items-center justify-center border-l border-white">
-                                                133
+                                                0
                                             </span>
                                         </div>
 
-                                        <div className="w-[65px] h-[35px] grid grid-cols-[35%_65%] bg-gradient-to-tr from-blue-200 via-blue-300 to-blue-400 shadow border border-white items-center justify-center rounded-md">
+                                        <div
+                                            title="Thẻ cấp 3"
+                                            className="w-[65px] h-[35px] cursor-pointer grid grid-cols-[35%_65%] bg-gradient-to-tr from-blue-200 via-blue-300 to-blue-400 shadow border border-white items-center justify-center rounded-md"
+                                        >
                                             <span className="text-white text-shadow-black font-serifBook flex items-center justify-center border-r border-white">
                                                 3
                                             </span>
                                             <span className="text-black font-medium flex items-center justify-center border-l border-white">
-                                                133
+                                                0
                                             </span>
                                         </div>
 
-                                        <div className="w-[65px] h-[35px] grid grid-cols-[35%_65%] bg-gradient-to-tr from-green-200 via-green-300 to-green-400 shadow border border-white items-center justify-center rounded-md">
+                                        <div
+                                            title="Thẻ cấp 4"
+                                            className="w-[65px] h-[35px] cursor-pointer grid grid-cols-[35%_65%] bg-gradient-to-tr from-green-200 via-green-300 to-green-400 shadow border border-white items-center justify-center rounded-md"
+                                        >
                                             <span className="text-white text-shadow-black font-serifBook flex items-center justify-center border-r border-white">
                                                 4
                                             </span>
                                             <span className="text-black font-medium flex items-center justify-center border-l border-white">
-                                                133
+                                                0
                                             </span>
                                         </div>
 
-                                        <div className="w-[65px] h-[35px] grid grid-cols-[35%_65%] bg-gradient-to-tr from-zinc-200 via-zinc-300 to-zinc-400 shadow border border-white items-center justify-center rounded-md">
+                                        <div
+                                            title="Thẻ cấp 5"
+                                            className="w-[65px] h-[35px] cursor-pointer grid grid-cols-[35%_65%] bg-gradient-to-tr from-red-50 via-red-100 to-red-200 shadow border border-white items-center justify-center rounded-md"
+                                        >
                                             <span className="text-white text-shadow-black font-serifBook flex items-center justify-center border-r border-white">
                                                 5
                                             </span>
                                             <span className="text-black font-medium flex items-center justify-center border-l border-white">
-                                                133
+                                                0
                                             </span>
                                         </div>
                                     </div>
@@ -247,13 +265,13 @@ const ProductDetailPage = () => {
                         </div>
                         <div className="w-full h-[65px] flex items-center justify-center">
                             <div className="h-[50px] grid grid-cols-2 gap-3">
-                                <div className="w-[200px] h-[50px] flex items-center justify-center text-black text-md rounded bg-gradient-to-tr from-gray-100 via-red-50 to-red-100 shadow border  transition-colors font-medium ">
+                                <div className="w-[220px] h-[50px] flex items-center justify-center text-black text-md rounded bg-gradient-to-tr from-gray-100 via-red-50 to-red-100 shadow border  transition-colors font-medium ">
                                     {Number(10).toLocaleString("vi-VN")}
                                 </div>
                                 {/* <button className="w-[200px] h-[50px] text-white text-md rounded font-medium shadow bg-gradient-to-t from-green-400 via-green-500 to-green-600 hover:brightness-110 active:brightness-95 transition border-b-2 border-green-500">
                                     Mua ngay
                                 </button> */}
-                                <button className="w-[200px] h-[50px] text-white text-md rounded font-medium shadow bg-gradient-to-t from-red-400 via-red-500 to-red-600 hover:brightness-110 active:brightness-95 transition border-b-2 border-red-500">
+                                <button className="w-[220px] h-[50px] text-white text-md rounded font-medium shadow bg-gradient-to-t from-red-400 via-red-500 to-red-600 hover:brightness-110 active:brightness-95 transition border-b-2 border-red-500">
                                     Hết hàng
                                 </button>
                             </div>
