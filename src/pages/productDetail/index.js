@@ -10,7 +10,7 @@ import LocalShippingOutlinedIcon from '@mui/icons-material/LocalShippingOutlined
 import AddOutlinedIcon from '@mui/icons-material/AddOutlined';
 import RemoveOutlinedIcon from '@mui/icons-material/RemoveOutlined';
 import ShoppingBagOutlinedIcon from '@mui/icons-material/ShoppingBagOutlined';
-import GppGoodOutlinedIcon from '@mui/icons-material/GppGoodOutlined';
+import HealthAndSafetyOutlinedIcon from '@mui/icons-material/HealthAndSafetyOutlined';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import StarIcon from '@mui/icons-material/Star';
 
@@ -19,30 +19,6 @@ import { Link } from 'react-router-dom';
 const ProductDetailPage = () => {
     const [openSearch, setOpenSearch] = useState(false);
     const [openNotification, setOpenNotification] = useState(false);
-
-    // Tạo giao diện ngọc hệ ngũ hành
-    const ElementGem = ({ value, type }) => {
-        const colors = {
-            metal: "from-slate-200 to-slate-500 border-slate-400",
-            wood: "from-green-300 to-green-600 border-green-500",
-            water: "from-sky-300 to-sky-600 border-sky-500",
-            fire: "from-red-300 to-red-600 border-red-500",
-            earth: "from-yellow-300 to-yellow-600 border-yellow-500",
-        };
-
-        return (
-            <div className="flex items-center font-medium text-blue-700 gap-1.5">
-                {value}
-
-                <div
-                    className={`w-5 h-5 rounded-full bg-gradient-to-br ${colors[type]} border shadow flex items-center justify-center text-white`}
-                >
-                    <StarIcon sx={{ fontSize: 15 }} />
-                </div>
-            </div>
-
-        );
-    };
 
     return (
         <>
@@ -181,35 +157,45 @@ const ProductDetailPage = () => {
                                 <span className="h-full text-md text-black flex items-center gap-2">
                                     <ShoppingBagOutlinedIcon />
 
-                                    <div className="w-[60px] h-[35px] bg-red-50 shadow border border-white flex items-center justify-center rounded-md">
-                                        <ElementGem value={1} type="earth" />
+                                    <div className="w-[60px] h-[35px] bg-gradient-to-tr from-yellow-200 via-yellow-300 to-yellow-400 text-white text-shadow-black font-medium shadow border border-white flex items-center justify-center rounded-md">
+                                        1
                                     </div>
 
                                 </span>
                             </div>
                             <div className="w-full h-[65px] grid grid-cols-[20%_80%] gap-3">
                                 <span className="h-full text-md text-gray-500 flex flex-col items-start justify-center text-left">
-                                    <span>Ngọc hệ</span>
+                                    <span>Thẻ mua hệ</span>
                                     <span>ngũ hành</span>
                                 </span>
 
                                 <div className="h-full text-md text-black flex items-center gap-2">
-                                    <GppGoodOutlinedIcon />
+                                    <HealthAndSafetyOutlinedIcon />
                                     <div className="h-full flex items-center gap-3">
-                                        <div className="w-[60px] h-[35px] bg-red-50 shadow border border-white flex items-center justify-center rounded-md">
-                                            <ElementGem value={1} type="earth" />
+                                        <div className="w-[60px] h-[35px] bg-gradient-to-tr from-yellow-200 via-yellow-300 to-yellow-400 shadow border border-white flex items-center justify-center rounded-md">
+                                            <span className="text-white text-shadow-black font-medium">
+                                                1
+                                            </span>
                                         </div>
-                                        <div className="w-[60px] h-[35px] bg-red-50 shadow border border-white flex items-center justify-center rounded-md">
-                                            <ElementGem value={3} type="fire" />
+                                        <div className="w-[60px] h-[35px] bg-gradient-to-tr from-red-200 via-red-300 to-red-400 shadow border border-white flex items-center justify-center rounded-md">
+                                            <span className="text-white text-shadow-black font-medium">
+                                                388
+                                            </span>
                                         </div>
-                                        <div className="w-[60px] h-[35px] bg-red-50 shadow border border-white flex items-center justify-center rounded-md">
-                                            <ElementGem value={2} type="water" />
+                                        <div className="w-[60px] h-[35px] bg-gradient-to-tr from-blue-200 via-blue-300 to-blue-400 shadow border border-white flex items-center justify-center rounded-md">
+                                            <span className="text-white text-shadow-black font-medium">
+                                                2
+                                            </span>
                                         </div>
-                                        <div className="w-[60px] h-[35px] bg-red-50 shadow border border-white flex items-center justify-center rounded-md">
-                                            <ElementGem value={4} type="wood" />
+                                        <div className="w-[60px] h-[35px] bg-gradient-to-tr from-green-200 via-green-300 to-green-400 shadow border border-white flex items-center justify-center rounded-md">
+                                            <span className="text-white text-shadow-black font-medium">
+                                                4
+                                            </span>
                                         </div>
-                                        <div className="w-[60px] h-[35px] bg-red-50 shadow border border-white flex items-center justify-center rounded-md">
-                                            <ElementGem value={2} type="metal" />
+                                        <div className="w-[60px] h-[35px] bg-gradient-to-tr from-zinc-200 via-zinc-300 to-zinc-400 shadow border border-white flex items-center justify-center rounded-md">
+                                            <span className="text-white text-shadow-black font-medium">
+                                                6
+                                            </span>
                                         </div>
                                     </div>
                                 </div>
