@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
@@ -10,7 +10,7 @@ import LocalShippingOutlinedIcon from '@mui/icons-material/LocalShippingOutlined
 import AddOutlinedIcon from '@mui/icons-material/AddOutlined';
 import RemoveOutlinedIcon from '@mui/icons-material/RemoveOutlined';
 import ShoppingBagOutlinedIcon from '@mui/icons-material/ShoppingBagOutlined';
-import AccessTimeOutlinedIcon from '@mui/icons-material/AccessTimeOutlined';
+import GppGoodOutlinedIcon from '@mui/icons-material/GppGoodOutlined';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import StarIcon from '@mui/icons-material/Star';
 
@@ -20,28 +20,29 @@ const ProductDetailPage = () => {
     const [openSearch, setOpenSearch] = useState(false);
     const [openNotification, setOpenNotification] = useState(false);
 
-    // Tổng giây = 6 ngày 23 giờ 59 phút 59 giây
-    const initialSeconds = 6 * 24 * 3600 + 23 * 3600 + 59;
-    const [secondsLeft, setSecondsLeft] = useState(initialSeconds);
+    // Tạo giao diện ngọc hệ ngũ hành
+    const ElementGem = ({ value, type }) => {
+        const colors = {
+            metal: "from-slate-200 to-slate-500 border-slate-400",
+            wood: "from-green-300 to-green-600 border-green-500",
+            water: "from-sky-300 to-sky-600 border-sky-500",
+            fire: "from-red-300 to-red-600 border-red-500",
+            earth: "from-yellow-300 to-yellow-600 border-yellow-500",
+        };
 
-    useEffect(() => {
-        const interval = setInterval(() => {
-            setSecondsLeft((prev) => {
-                if (prev <= 1) {
-                    clearInterval(interval);
-                    return 0;
-                }
-                return prev - 1;
-            });
-        }, 1000);
+        return (
+            <div className="flex items-center font-medium text-blue-700 gap-1.5">
+                {value}
 
-        return () => clearInterval(interval);
-    }, []);
+                <div
+                    className={`w-5 h-5 rounded-full bg-gradient-to-br ${colors[type]} border shadow flex items-center justify-center text-white`}
+                >
+                    <StarIcon sx={{ fontSize: 15 }} />
+                </div>
+            </div>
 
-    const days = Math.floor(secondsLeft / (24 * 3600));
-    const hours = Math.floor((secondsLeft % (24 * 3600)) / 3600);
-    const minutes = Math.floor((secondsLeft % 3600) / 60);
-    const seconds = secondsLeft % 60;
+        );
+    };
 
     return (
         <>
@@ -129,13 +130,13 @@ const ProductDetailPage = () => {
                                 <span>
                                     4.9
                                 </span>
-                                <span className="text-yellow-400">
+                                <div className="text-yellow-400">
                                     <StarIcon />
                                     <StarIcon />
                                     <StarIcon />
                                     <StarIcon />
                                     <StarIcon />
-                                </span>
+                                </div>
                             </div>
                             <div className="h-[30px] text-md px-5 border-r-2 text-gray-500 flex items-center gap-2">
                                 <span className="text-black">3,1k</span>
@@ -165,35 +166,52 @@ const ProductDetailPage = () => {
                                 <span className="h-full text-md text-gray-500 flex items-center">
                                     Vận chuyển
                                 </span>
-                                <div className="h-full text-md text-black flex items-center">
+                                <div className="h-full text-md text-black flex items-center gap-2">
                                     <LocalShippingOutlinedIcon />
-                                    <span className="ml-2 font-medium text-blue-700">
+                                    <span className="font-medium text-blue-700">
                                         Miễn phí vận chuyển.
                                     </span>
                                 </div>
                             </div>
                             <div className="w-full h-[65px] grid grid-cols-[20%_80%] gap-3">
-                                <span className="h-full text-md text-gray-500 flex items-center">
-                                    Lượt mua
+                                <span className="h-full text-md text-gray-500 flex flex-col items-start justify-center text-left">
+                                    <span>Lượt mua</span>
+                                    <span>(Cấp độ 1)</span>
                                 </span>
-                                <span className="h-full text-md text-black flex items-center">
+                                <span className="h-full text-md text-black flex items-center gap-2">
                                     <ShoppingBagOutlinedIcon />
-                                    <span className="ml-2 font-medium text-blue-700">
-                                        1 lượt.
-                                    </span>
+
+                                    <div className="w-[55px] h-[35px] bg-red-50 shadow border border-white flex items-center justify-center rounded-md">
+                                        <ElementGem value={10} type="earth" />
+                                    </div>
+
                                 </span>
                             </div>
                             <div className="w-full h-[65px] grid grid-cols-[20%_80%] gap-3">
                                 <span className="h-full text-md text-gray-500 flex flex-col items-start justify-center text-left">
-                                    <span>Thời gian</span>
-                                    <span>chờ mua</span>
+                                    <span>Ngọc hệ</span>
+                                    <span>ngũ hành</span>
                                 </span>
 
-                                <div className="h-full text-md text-black flex items-center">
-                                    <AccessTimeOutlinedIcon />
-                                    <span className="ml-2 font-medium text-blue-700">
-                                        {days} ngày {hours} giờ {minutes} phút {seconds} giây.
-                                    </span>
+                                <div className="h-full text-md text-black flex items-center gap-2">
+                                    <GppGoodOutlinedIcon />
+                                    <div className="h-full flex items-center gap-3">
+                                        <div className="w-[55px] h-[35px] bg-red-50 shadow border border-white flex items-center justify-center rounded-md">
+                                            <ElementGem value={1} type="earth" />
+                                        </div>
+                                        <div className="w-[55px] h-[35px] bg-red-50 shadow border border-white flex items-center justify-center rounded-md">
+                                            <ElementGem value={3} type="fire" />
+                                        </div>
+                                        <div className="w-[55px] h-[35px] bg-red-50 shadow border border-white flex items-center justify-center rounded-md">
+                                            <ElementGem value={2} type="water" />
+                                        </div>
+                                        <div className="w-[55px] h-[35px] bg-red-50 shadow border border-white flex items-center justify-center rounded-md">
+                                            <ElementGem value={4} type="wood" />
+                                        </div>
+                                        <div className="w-[55px] h-[35px] bg-red-50 shadow border border-white flex items-center justify-center rounded-md">
+                                            <ElementGem value={2} type="metal" />
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div className="w-full h-[65px] grid grid-cols-[20%_80%] gap-3">
