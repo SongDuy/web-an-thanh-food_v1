@@ -155,7 +155,7 @@ const Header = ({ onOpenSearch, onOpenNotify }) => {
                     onClick={() => setOpenAccount(false)}
                   >
                     <CurrencyExchangeOutlinedIcon />
-                    <span> Đổi điểm lấy thẻ </span>
+                    <span> Đổi điểm nhận thẻ </span>
                   </NavLink>
                 </li>
 
