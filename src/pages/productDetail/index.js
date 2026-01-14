@@ -10,7 +10,7 @@ import LocalShippingOutlinedIcon from '@mui/icons-material/LocalShippingOutlined
 import AddOutlinedIcon from '@mui/icons-material/AddOutlined';
 import RemoveOutlinedIcon from '@mui/icons-material/RemoveOutlined';
 import ShoppingBagOutlinedIcon from '@mui/icons-material/ShoppingBagOutlined';
-import HealthAndSafetyOutlinedIcon from '@mui/icons-material/HealthAndSafetyOutlined';
+import LoyaltyOutlinedIcon from '@mui/icons-material/LoyaltyOutlined';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import StarIcon from '@mui/icons-material/Star';
 
@@ -152,11 +152,10 @@ const ProductDetailPage = () => {
                             <div className="w-full h-[65px] grid grid-cols-[20%_80%] gap-3">
                                 <span className="h-full text-md text-gray-500 flex flex-col items-start justify-center text-left">
                                     <span>Lượt mua</span>
-                                    <span>(Cấp độ 1)</span>
+                                    <span>Thẻ cấp 1</span>
                                 </span>
                                 <span className="h-full text-md text-black flex items-center gap-2">
                                     <ShoppingBagOutlinedIcon />
-
                                     <div
                                         title="Thẻ cấp 1"
                                         className="w-[65px] h-[35px] cursor-pointer grid grid-cols-[35%_65%] bg-gradient-to-tr from-yellow-200 via-yellow-300 to-yellow-400 shadow border border-white items-center justify-center rounded-md"
@@ -174,11 +173,11 @@ const ProductDetailPage = () => {
                             <div className="w-full h-[65px] grid grid-cols-[20%_80%] gap-3">
                                 <span className="h-full text-md text-gray-500 flex flex-col items-start justify-center text-left">
                                     <span>Thẻ mua</span>
-                                    <span>(Đang có)</span>
+                                    <span>Đang có</span>
                                 </span>
 
                                 <div className="h-full text-md text-black flex items-center gap-2">
-                                    <HealthAndSafetyOutlinedIcon />
+                                    <LoyaltyOutlinedIcon />
                                     <div className="h-full flex items-center gap-3">
                                         <div
                                             title="Thẻ cấp 1"
@@ -188,7 +187,7 @@ const ProductDetailPage = () => {
                                                 1
                                             </span>
                                             <span className="text-black flex items-center justify-center border-l border-white">
-                                                133
+                                                3
                                             </span>
                                         </div>
 
