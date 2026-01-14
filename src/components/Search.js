@@ -366,13 +366,7 @@ const Search = ({ onClose }) => {
         }, 1000);
     };
 
-    // const filteredProducts = products
-    //     .filter(item =>
-    //         item.name.toLowerCase().includes(keyword.toLowerCase())
-    //     )
-    //     .sort((a, b) => b.stock - a.stock)
-    //     .slice(0, 6);
-
+    // Tìm sản phẩm theo tên
     const filteredProducts = products
         .filter(item =>
             item.name.toLowerCase().includes(keyword.toLowerCase())
