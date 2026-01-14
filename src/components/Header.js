@@ -9,6 +9,7 @@ import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlin
 import HomeWorkOutlinedIcon from '@mui/icons-material/HomeWorkOutlined';
 import Inventory2OutlinedIcon from '@mui/icons-material/Inventory2Outlined';
 import SentimentVerySatisfiedIcon from '@mui/icons-material/SentimentVerySatisfied';
+import CurrencyExchangeOutlinedIcon from '@mui/icons-material/CurrencyExchangeOutlined';
 
 import { NavLink } from "react-router-dom";
 
@@ -144,6 +145,17 @@ const Header = ({ onOpenSearch, onOpenNotify }) => {
                   >
                     <AccountCircleOutlinedIcon />
                     <span> Thông tin tài khoản </span>
+                  </NavLink>
+                </li>
+
+                 <li>
+                  <NavLink
+                    to="/account/rewards"
+                    className="flex w-full h-[40px] items-center px-2 py-2 gap-5 hover:rounded-md hover:bg-gray-100"
+                    onClick={() => setOpenAccount(false)}
+                  >
+                    <CurrencyExchangeOutlinedIcon />
+                    <span> Đổi điểm lấy thẻ </span>
                   </NavLink>
                 </li>
 

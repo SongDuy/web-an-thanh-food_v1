@@ -14,6 +14,7 @@ import RegisterPage from "../pages/auth/Register";
 import ForgotPassword from "../pages/auth/ForgotPassword";
 
 import AccountProfilePage from '../pages/account/Profile';
+import AccountRewardsPage from '../pages/account/Rewards';
 import AccountOrdersPage from '../pages/account/Orders';
 import AccountAddressPage from '../pages/account/Address';
 import AccountFavoritesPage from '../pages/account/Favorites';
@@ -61,6 +62,7 @@ const AppRoutes = () => {
 
             {/* Danh mục Account - page */}
             <Route path="/account/profile" element={<AccountProfilePage />} />
+            <Route path="/account/rewards" element={<AccountRewardsPage />} />
             <Route path="/account/orders" element={<AccountOrdersPage />} />
             <Route path="/account/address" element={<AccountAddressPage />} />
             <Route path="/account/favorites" element={<AccountFavoritesPage />} />
@@ -79,7 +81,7 @@ const AppRoutes = () => {
                 <Route path="products" element={<AdminProductsPage />} />
                 <Route path="about" element={<AdminAboutPage />} />
                 <Route path="Contact" element={<AdminContactPage />} />
-                <Route path="advertise" element={<AdminAdvertisePage/>} />
+                <Route path="advertise" element={<AdminAdvertisePage />} />
                 <Route path="privacy" element={<AdminPrivacyPage />} />
                 <Route path="terms" element={<AdminTermsPage />} />
                 <Route path="settings" element={<AdminSettingsPage />} />
