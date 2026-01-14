@@ -13,10 +13,19 @@ const toSlug = (str) =>
 const ProductCard = ({ product, index }) => {
   if (!product) return null; // QUAN TRỌNG
 
+  // Tạo màu theo cấp lương thực thực phẩm
+  const levelColors = {
+    1: "text-yellow-500",
+    2: "text-red-500",
+    3: "text-sky-500",
+    4: "text-green-500",
+    5: "text-gray-500",
+  };
+
   return (
     <>
       <Link to={`/${toSlug(product.category)}/${toSlug(product.name)}?id=${product.id}`}>
-        <div className="max-w-[230px] h-[320px] flex flex-col border p-4 rounded shadow hover:bg-red-50 transition-all duration-300 bg-white ">
+        <div className="max-w-[230px] h-[320px] flex flex-col border p-4 rounded shadow hover:bg-red-50 transition-all duration-300 bg-white">
 
           {/* Khu vực ảnh: Giữ nguyên h-40 (~160px) */}
           <div className="relative w-full h-[160px] overflow-hidden rounded flex-shrink-0">
@@ -40,9 +49,17 @@ const ProductCard = ({ product, index }) => {
             <h3 className="w-full h-[50px] text-md font-medium text-black line-clamp-2">
               {product.name}
             </h3>
-            <span className="text-sm font-medium text-blue-700">
+            <div className="w-full">
+              <span className="text-sm font-medium text-purple-700 pr-2 border-r">
+                {product.category}
+              </span>
+              <span className={`text-sm font-medium pl-2 border-l ${levelColors[product.level] || 'text-gray-400'}`}>
+                {product.unit} * {product.weight}
+              </span>
+            </div>
+            {/* <span className="text-sm font-medium text-blue-700">
               {product.unit} * {product.weight}
-            </span>
+            </span> */}
           </div>
 
           {/* Nút bấm: Sẽ luôn nằm ở đáy nhờ cấu trúc flex-col */}

@@ -9,6 +9,7 @@ const products = [
     id: 1,
     name: "Sữa Tươi Tiệt Trùng - Có Đường",
     image: "https://product.hstatic.net/1000141988/product/sua_tuoi_tiet_trung_co_duong_vinamilk_viet_nam__1l__2f553e41e7f54abba37116456aa94db3_grande.png",
+    level: 1,
     price: 0,
     category: "Thực phẩm",
     unit: "3 túi",
@@ -18,12 +19,13 @@ const products = [
     expiryDate: "2026-06-30",
     rating: 4.8,
     likes: 129,
-    stock: 3
+    stock: 32
   },
   {
     id: 2,
     name: "Sữa Tươi Tiệt Trùng - Ít Đường",
     image: "https://product.hstatic.net/1000141988/product/sua_tuoi_tiet_trung_co_duong_vinamilk_viet_nam__1l__2f553e41e7f54abba37116456aa94db3_grande.png",
+    level: 1,
     price: 0,
     category: "Thực phẩm",
     unit: "1 túi",
@@ -39,6 +41,7 @@ const products = [
     id: 3,
     name: "Sữa Tươi Tiệt Trùng - Không Đường",
     image: "https://product.hstatic.net/1000141988/product/sua_tuoi_tiet_trung_co_duong_vinamilk_viet_nam__1l__2f553e41e7f54abba37116456aa94db3_grande.png",
+    level: 1,
     price: 0,
     category: "Thực phẩm",
     unit: "1 túi",
@@ -46,14 +49,15 @@ const products = [
     brand: "Vinamilk",
     origin: "Việt Nam",
     expiryDate: "2026-07-15",
-    rating: 4.2,
+    rating: 3.9,
     likes: 75,
-    stock: 10
+    stock: 32
   },
   {
     id: 4,
     name: "Sữa Tươi Tiệt Trùng - Vị Dâu",
     image: "https://product.hstatic.net/1000141988/product/sua_tuoi_tiet_trung_co_duong_vinamilk_viet_nam__1l__2f553e41e7f54abba37116456aa94db3_grande.png",
+    level: 1,
     price: 0,
     category: "Thực phẩm",
     unit: "1 túi",
@@ -63,12 +67,13 @@ const products = [
     expiryDate: "2026-08-01",
     rating: 4.7,
     likes: 15,
-    stock: 7
+    stock: 32
   },
   {
     id: 5,
     name: "Sữa Tươi Tiệt Trùng - Vị Socola",
     image: "https://product.hstatic.net/1000141988/product/sua_tuoi_tiet_trung_co_duong_vinamilk_viet_nam__1l__2f553e41e7f54abba37116456aa94db3_grande.png",
+    level: 1,
     price: 0,
     category: "Thực phẩm",
     unit: "1 túi",
@@ -78,12 +83,13 @@ const products = [
     expiryDate: "2026-08-01",
     rating: 4.9,
     likes: 17,
-    stock: 26
+    stock: 32
   },
   {
     id: 6,
     name: "Mì - Tôm Chua Cay",
     image: "https://product.hstatic.net/1000141988/product/sua_tuoi_tiet_trung_co_duong_vinamilk_viet_nam__1l__2f553e41e7f54abba37116456aa94db3_grande.png",
+    level: 4,
     price: 0,
     category: "Thực phẩm",
     unit: "1 gói",
@@ -93,12 +99,13 @@ const products = [
     expiryDate: "2025-12-31",
     rating: 4.6,
     likes: 35,
-    stock: 17
+    stock: 32
   },
   {
     id: 7,
     name: "Sữa Đậu Nành - Có Đường",
     image: "https://product.hstatic.net/1000141988/product/sua_tuoi_tiet_trung_co_duong_vinamilk_viet_nam__1l__2f553e41e7f54abba37116456aa94db3_grande.png",
+    level: 4,
     price: 0,
     category: "Thực phẩm",
     unit: "1 túi",
@@ -114,6 +121,7 @@ const products = [
     id: 8,
     name: "Sữa Đậu Nành - Ít Đường",
     image: "https://product.hstatic.net/1000141988/product/sua_tuoi_tiet_trung_co_duong_vinamilk_viet_nam__1l__2f553e41e7f54abba37116456aa94db3_grande.png",
+    level: 2,
     price: 0,
     category: "Thực phẩm",
     unit: "1 túi",
@@ -123,12 +131,13 @@ const products = [
     expiryDate: "2026-05-20",
     rating: 4.0,
     likes: 51,
-    stock: 31
+    stock: 32
   },
   {
     id: 9,
     name: "Sữa Đậu Nành - Không Đường",
     image: "https://product.hstatic.net/1000141988/product/sua_tuoi_tiet_trung_co_duong_vinamilk_viet_nam__1l__2f553e41e7f54abba37116456aa94db3_grande.png",
+    level: 2,
     price: 0,
     category: "Thực phẩm",
     unit: "1 túi",
@@ -136,14 +145,15 @@ const products = [
     brand: "Fami",
     origin: "Việt Nam",
     expiryDate: "2026-05-20",
-    rating: 4.6,
+    rating: 4.8,
     likes: 125,
-    stock: 37
+    stock: 32
   },
   {
     id: 10,
     name: "Gạo Lứt - Huyết Rồng",
     image: "https://product.hstatic.net/1000141988/product/sua_tuoi_tiet_trung_co_duong_vinamilk_viet_nam__1l__2f553e41e7f54abba37116456aa94db3_grande.png",
+    level: 3,
     price: 0,
     category: "Lương thực",
     unit: "1 túi",
@@ -151,7 +161,7 @@ const products = [
     brand: "ST",
     origin: "Sóc Trăng, Việt Nam",
     expiryDate: "2027-01-15",
-    rating: 4.3,
+    rating: 4.1,
     likes: 125,
     stock: 0
   },
@@ -159,6 +169,7 @@ const products = [
     id: 11,
     name: "Gạo Lứt - Tím Than",
     image: "https://product.hstatic.net/1000141988/product/sua_tuoi_tiet_trung_co_duong_vinamilk_viet_nam__1l__2f553e41e7f54abba37116456aa94db3_grande.png",
+    level: 3,
     price: 0,
     category: "Lương thực",
     unit: "1 túi",
@@ -166,14 +177,15 @@ const products = [
     brand: "ST",
     origin: "Sóc Trăng, Việt Nam",
     expiryDate: "2027-01-15",
-    rating: 4.5,
+    rating: 4.4,
     likes: 125,
-    stock: 0
+    stock: 32
   },
   {
     id: 12,
     name: "Gạo - ST25",
     image: "https://product.hstatic.net/1000141988/product/sua_tuoi_tiet_trung_co_duong_vinamilk_viet_nam__1l__2f553e41e7f54abba37116456aa94db3_grande.png",
+    level: 5,
     price: 0,
     category: "Lương thực",
     unit: "1 túi",
@@ -181,14 +193,15 @@ const products = [
     brand: "ST",
     origin: "Sóc Trăng, Việt Nam",
     expiryDate: "2027-02-01",
-    rating: 4.4,
-    likes: 55,
+    rating: 4.0,
+    likes: 125,
     stock: 0
   },
   {
     id: 13,
     name: "Gạo - ST21",
     image: "https://product.hstatic.net/1000141988/product/sua_tuoi_tiet_trung_co_duong_vinamilk_viet_nam__1l__2f553e41e7f54abba37116456aa94db3_grande.png",
+    level: 4,
     price: 0,
     category: "Lương thực",
     unit: "1 túi",
@@ -196,14 +209,15 @@ const products = [
     brand: "ST",
     origin: "Sóc Trăng, Việt Nam",
     expiryDate: "2027-02-01",
-    rating: 4.2,
-    likes: 25,
-    stock: 0
+    rating: 4.3,
+    likes: 125,
+    stock: 32
   },
   {
     id: 14,
     name: "Thịt Hộp - Hàn Quốc",
     image: "https://product.hstatic.net/1000141988/product/sua_tuoi_tiet_trung_co_duong_vinamilk_viet_nam__1l__2f553e41e7f54abba37116456aa94db3_grande.png",
+    level: 2,
     price: 0,
     category: "Thực phẩm",
     unit: "1 hộp",
@@ -211,14 +225,15 @@ const products = [
     brand: "CJ",
     origin: "Hàn Quốc",
     expiryDate: "2026-12-31",
-    rating: 4.3,
-    likes: 15,
-    stock: 0
+    rating: 4.2,
+    likes: 125,
+    stock: 32
   },
   {
     id: 15,
     name: "Cá Hộp - Sốt Cà",
     image: "https://product.hstatic.net/1000141988/product/sua_tuoi_tiet_trung_co_duong_vinamilk_viet_nam__1l__2f553e41e7f54abba37116456aa94db3_grande.png",
+    level: 1,
     price: 0,
     category: "Thực phẩm",
     unit: "1 hộp",
@@ -226,14 +241,15 @@ const products = [
     brand: "Hạ Long",
     origin: "Việt Nam",
     expiryDate: "2026-11-30",
-    rating: 4.5,
-    likes: 57,
+    rating: 4.1,
+    likes: 125,
     stock: 0
   },
   {
     id: 16,
     name: "Đậu Đen Xanh Lòng",
     image: "https://product.hstatic.net/1000141988/product/sua_tuoi_tiet_trung_co_duong_vinamilk_viet_nam__1l__2f553e41e7f54abba37116456aa94db3_grande.png",
+    level: 3,
     price: 0,
     category: "Lương thực",
     unit: "1 túi",
@@ -241,14 +257,15 @@ const products = [
     brand: "Nông sản Việt",
     origin: "Việt Nam",
     expiryDate: "2027-03-10",
-    rating: 4.1,
+    rating: 4.9,
     likes: 125,
-    stock: 0
+    stock: 32
   },
   {
     id: 17,
     name: "Đậu Đen Xanh Lòng",
     image: "https://product.hstatic.net/1000141988/product/sua_tuoi_tiet_trung_co_duong_vinamilk_viet_nam__1l__2f553e41e7f54abba37116456aa94db3_grande.png",
+    level: 4,
     price: 0,
     category: "Lương thực",
     unit: "1 túi",
@@ -256,13 +273,14 @@ const products = [
     brand: "Nông sản Việt",
     origin: "Việt Nam",
     expiryDate: "2027-03-10",
-    rating: 4.5,
-    likes: 31,
-    stock: 0
-  },{
+    rating: 4.7,
+    likes: 135,
+    stock: 32
+  }, {
     id: 18,
     name: "Đậu Đen Xanh Lòng",
     image: "https://product.hstatic.net/1000141988/product/sua_tuoi_tiet_trung_co_duong_vinamilk_viet_nam__1l__2f553e41e7f54abba37116456aa94db3_grande.png",
+    level: 2,
     price: 0,
     category: "Lương thực",
     unit: "1 túi",
@@ -270,13 +288,14 @@ const products = [
     brand: "Nông sản Việt",
     origin: "Việt Nam",
     expiryDate: "2027-03-10",
-    rating: 4.5,
-    likes: 33,
-    stock: 0
-  },{
+    rating: 4.6,
+    likes: 125,
+    stock: 32
+  }, {
     id: 19,
     name: "Đậu Đen Xanh Lòng",
     image: "https://product.hstatic.net/1000141988/product/sua_tuoi_tiet_trung_co_duong_vinamilk_viet_nam__1l__2f553e41e7f54abba37116456aa94db3_grande.png",
+    level: 3,
     price: 0,
     category: "Lương thực",
     unit: "1 túi",
@@ -284,13 +303,14 @@ const products = [
     brand: "Nông sản Việt",
     origin: "Việt Nam",
     expiryDate: "2027-03-10",
-    rating: 4.5,
-    likes: 45,
-    stock: 0
-  },{
+    rating: 4.8,
+    likes: 125,
+    stock: 32
+  }, {
     id: 20,
     name: "Đậu Đen Xanh Lòng",
     image: "https://product.hstatic.net/1000141988/product/sua_tuoi_tiet_trung_co_duong_vinamilk_viet_nam__1l__2f553e41e7f54abba37116456aa94db3_grande.png",
+    level: 5,
     price: 0,
     category: "Lương thực",
     unit: "1 túi",
@@ -298,13 +318,14 @@ const products = [
     brand: "Nông sản Việt",
     origin: "Việt Nam",
     expiryDate: "2027-03-10",
-    rating: 4.5,
-    likes: 25,
-    stock: 0
-  },{
+    rating: 4.2,
+    likes: 125,
+    stock: 32
+  }, {
     id: 21,
     name: "Đậu Đen Xanh Lòng",
     image: "https://product.hstatic.net/1000141988/product/sua_tuoi_tiet_trung_co_duong_vinamilk_viet_nam__1l__2f553e41e7f54abba37116456aa94db3_grande.png",
+    level: 1,
     price: 0,
     category: "Lương thực",
     unit: "1 túi",
@@ -313,8 +334,8 @@ const products = [
     origin: "Việt Nam",
     expiryDate: "2027-03-10",
     rating: 4.5,
-    likes: 15,
-    stock: 0
+    likes: 125,
+    stock: 32
   },
 ];
 

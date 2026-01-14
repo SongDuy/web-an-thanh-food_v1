@@ -33,10 +33,20 @@ function formatLikes(num) {
 const RankingCard = ({ product, index, total, sortOrder }) => {
   if (!product) return null; // QUAN TRỌNG
 
+  // Hiện Xếp hạng
   const rank =
     total && sortOrder === "asc"
       ? total - index            // cao → thấp
       : index + 1;              // thấp → cao
+
+  // Tạo màu theo cấp lương thực thực phẩm
+  const levelColors = {
+    1: "text-yellow-500",
+    2: "text-red-500",
+    3: "text-sky-500",
+    4: "text-green-500",
+    5: "text-gray-500",
+  };
 
   return (
     <>
@@ -77,10 +87,10 @@ const RankingCard = ({ product, index, total, sortOrder }) => {
               </div>
 
               <div className="w-full">
-                <span className="text-sm font-medium text-blue-700 pr-2 border-r">
+                <span className="text-sm font-medium text-purple-700 pr-2 border-r">
                   {product.category}
                 </span>
-                <span className="text-sm font-medium text-blue-700 pl-2 border-l">
+                <span className={`text-sm font-medium pl-2 border-l ${levelColors[product.level] || 'text-gray-400'}`}>
                   {product.unit} * {product.weight}
                 </span>
               </div>
