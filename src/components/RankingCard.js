@@ -86,7 +86,7 @@ const RankingCard = ({ product, index, total, sortOrder }) => {
                 </h3>
               </div>
 
-              <div className="w-full">
+              <div className="w-full line-clamp-1">
                 <span className="text-sm font-medium text-purple-700 pr-2 border-r">
                   {product.category}
                 </span>

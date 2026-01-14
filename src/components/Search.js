@@ -493,18 +493,17 @@ const Search = ({ onClose }) => {
 
                                 {/* Info */}
                                 <div className="w-full flex flex-col gap-1">
-                                    <div className="w-full mb-1.5">
+                                    <div className="w-full">
                                         <h3 className="w-full text-sm font-medium text-black line-clamp-1">
                                             {product.name}
                                         </h3>
                                     </div>
 
-                                    <div className="flex text-xs">
-                                        <span className="pr-2 border-r text-purple-700 font-medium">
+                                    <div className="w-full line-clamp-1">
+                                        <span className="text-xs font-medium text-purple-700 pr-2 border-r">
                                             {product.category}
                                         </span>
-
-                                        <span className={`pl-2 border-l font-medium ${levelColors[product.level] || 'text-gray-400'}`}>
+                                        <span className={`text-xs font-medium pl-2 border-l ${levelColors[product.level] || 'text-gray-400'}`}>
                                             {product.unit} * {product.weight}
                                         </span>
                                     </div>

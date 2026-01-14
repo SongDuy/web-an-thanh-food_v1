@@ -49,7 +49,8 @@ const ProductCard = ({ product, index }) => {
             <h3 className="w-full h-[50px] text-md font-medium text-black line-clamp-2">
               {product.name}
             </h3>
-            <div className="w-full">
+
+            <div className="w-full line-clamp-1">
               <span className="text-sm font-medium text-purple-700 pr-2 border-r">
                 {product.category}
               </span>
