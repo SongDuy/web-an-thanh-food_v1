@@ -33,7 +33,7 @@ const AccountRewardsPage = () => {
             <div className="w-full bg-soft px-[160px] pt-[100px] pb-[50px]">
                <div className="w-full py-[25px] flex items-center gap-1">
                     <h1 className="text-[22px] text-black font-semibold uppercase">
-                        Cài Đặt Hệ Thống
+                        Đổi Điểm Nhận Thẻ
                     </h1>
                 </div>
                 
