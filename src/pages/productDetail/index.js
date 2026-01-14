@@ -139,9 +139,12 @@ const ProductDetailPage = () => {
 
                         <div className="w-full px-5">
                             <div className="w-full h-[65px] grid grid-cols-[20%_80%] gap-3">
-                                <span className="h-full text-md text-gray-500 flex items-center">
-                                    Vận chuyển
-                                </span>
+                                <div className="w-full h-full">
+                                    <span className="w-full h-full text-md text-gray-500 flex items-center">
+                                        Vận chuyển
+                                    </span>
+                                </div>
+
                                 <div className="h-full text-md text-black flex items-center gap-2">
                                     <LocalShippingOutlinedIcon />
                                     <span className="font-medium text-blue-700">
@@ -150,14 +153,19 @@ const ProductDetailPage = () => {
                                 </div>
                             </div>
                             <div className="w-full h-[65px] grid grid-cols-[20%_80%] gap-3">
-                                <span className="h-full text-md text-gray-500 flex flex-col items-start justify-center text-left">
-                                    <span>Lượt mua</span>
-                                    <span>Thẻ cấp 1</span>
-                                </span>
-                                <span className="h-full text-md text-black flex items-center gap-2">
+                                <div className="w-full h-full flex flex-col items-start justify-center">
+                                    <span className="text-md text-gray-500">
+                                        Lượt mua
+                                    </span>
+                                    <span className="text-md text-gray-500">
+                                        Thẻ cấp 1
+                                    </span>
+                                </div>
+
+                                <div className="h-full text-md text-black flex items-center gap-2">
                                     <ShoppingBagOutlinedIcon />
                                     <div
-                                        title="Thẻ cấp 1"
+                                        title="Thẻ cấp 1 (hệ thổ)"
                                         className="w-[65px] h-[35px] cursor-pointer grid grid-cols-[35%_65%] bg-gradient-to-tr from-yellow-200 via-yellow-300 to-yellow-400 shadow border border-white items-center justify-center rounded-md"
                                     >
                                         <span className="text-white text-shadow-black font-medium flex items-center justify-center border-r border-white">
@@ -168,19 +176,23 @@ const ProductDetailPage = () => {
                                         </span>
                                     </div>
 
-                                </span>
+                                </div>
                             </div>
                             <div className="w-full h-[65px] grid grid-cols-[20%_80%] gap-3">
-                                <span className="h-full text-md text-gray-500 flex flex-col items-start justify-center text-left">
-                                    <span>Thẻ mua</span>
-                                    <span>Đang có</span>
-                                </span>
+                                <div className="w-full h-full flex flex-col items-start justify-center">
+                                    <span className="text-md text-gray-500">
+                                        Thẻ mua
+                                    </span>
+                                    <span className="text-md text-gray-500">
+                                        Đang có
+                                    </span>
+                                </div>
 
                                 <div className="h-full text-md text-black flex items-center gap-2">
                                     <LoyaltyOutlinedIcon />
                                     <div className="h-full flex items-center gap-3">
                                         <div
-                                            title="Thẻ cấp 1"
+                                            title="Thẻ cấp 1 (hệ thổ)"
                                             className="w-[65px] h-[35px] cursor-pointer grid grid-cols-[35%_65%] bg-gradient-to-tr from-yellow-200 via-yellow-300 to-yellow-400 shadow border border-white items-center justify-center rounded-md"
                                         >
                                             <span className="text-white text-shadow-black font-medium flex items-center justify-center border-r border-white">
@@ -192,7 +204,7 @@ const ProductDetailPage = () => {
                                         </div>
 
                                         <div
-                                            title="Thẻ cấp 2"
+                                            title="Thẻ cấp 2 (hệ hỏa)"
                                             className="w-[65px] h-[35px] cursor-pointer grid grid-cols-[35%_65%] bg-gradient-to-tr from-red-200 via-red-300 to-red-400 shadow border border-white items-center justify-center rounded-md"
                                         >
                                             <span className="text-white text-shadow-black font-medium flex items-center justify-center border-r border-white">
@@ -204,7 +216,7 @@ const ProductDetailPage = () => {
                                         </div>
 
                                         <div
-                                            title="Thẻ cấp 3"
+                                            title="Thẻ cấp 3 (hệ thủy)"
                                             className="w-[65px] h-[35px] cursor-pointer grid grid-cols-[35%_65%] bg-gradient-to-tr from-blue-200 via-blue-300 to-blue-400 shadow border border-white items-center justify-center rounded-md"
                                         >
                                             <span className="text-white text-shadow-black font-medium flex items-center justify-center border-r border-white">
@@ -216,7 +228,7 @@ const ProductDetailPage = () => {
                                         </div>
 
                                         <div
-                                            title="Thẻ cấp 4"
+                                            title="Thẻ cấp 4 (hệ mộc)"
                                             className="w-[65px] h-[35px] cursor-pointer grid grid-cols-[35%_65%] bg-gradient-to-tr from-green-200 via-green-300 to-green-400 shadow border border-white items-center justify-center rounded-md"
                                         >
                                             <span className="text-white text-shadow-black font-medium flex items-center justify-center border-r border-white">
@@ -228,7 +240,7 @@ const ProductDetailPage = () => {
                                         </div>
 
                                         <div
-                                            title="Thẻ cấp 5"
+                                            title="Thẻ cấp 5 (hệ kim)"
                                             className="w-[65px] h-[35px] cursor-pointer grid grid-cols-[35%_65%] bg-gradient-to-tr from-red-50 via-red-100 to-red-200 shadow border border-white items-center justify-center rounded-md"
                                         >
                                             <span className="text-white text-shadow-black font-medium flex items-center justify-center border-r border-white">
