@@ -17,7 +17,7 @@ const ProductCard = ({ product, index }) => {
   const levelColors = {
     1: "text-yellow-500",
     2: "text-red-500",
-    3: "text-sky-500",
+    3: "text-blue-500",
     4: "text-green-500",
     5: "text-gray-500",
   };

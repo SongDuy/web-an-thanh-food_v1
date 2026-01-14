@@ -55,7 +55,7 @@ const Header = ({ onOpenSearch, onOpenNotify }) => {
               to="/luong-thuc"
               className={({ isActive }) =>
                 `uppercase text-black text-lg font-bold transition-all duration-300 ease-in-out
-                ${isActive ? "text-blue-800" : "hover:text-blue-800"}`
+                ${isActive ? "text-purple-700" : "hover:text-purple-700"}`
               }
             >
               Lương Thực
@@ -66,7 +66,7 @@ const Header = ({ onOpenSearch, onOpenNotify }) => {
               to="/thuc-pham"
               className={({ isActive }) =>
                 `uppercase text-black text-lg font-bold transition-all duration-300 ease-in-out
-                ${isActive ? "text-blue-800" : "hover:text-blue-800"}`
+                ${isActive ? "text-purple-700" : "hover:text-purple-700"}`
               }
             >
               Thực Phẩm
@@ -77,7 +77,7 @@ const Header = ({ onOpenSearch, onOpenNotify }) => {
               to="/bang-xep-hang"
               className={({ isActive }) =>
                 `uppercase text-black text-lg font-bold transition-all duration-300 ease-in-out
-                ${isActive ? "text-blue-800" : "hover:text-blue-800"}`
+                ${isActive ? "text-purple-700" : "hover:text-purple-700"}`
               }
             >
               Bảng Xếp Hạng
