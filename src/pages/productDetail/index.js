@@ -166,7 +166,7 @@ const ProductDetailPage = () => {
                                     <ShoppingBagOutlinedIcon />
                                     <div
                                         title="Thẻ cấp 1 (Hệ Thổ)"
-                                        className="w-[65px] h-[35px] cursor-pointer grid grid-cols-[35%_65%] bg-gradient-to-tr from-yellow-200 via-yellow-300 to-yellow-400 shadow border border-white items-center justify-center rounded-md"
+                                        className="w-[65px] h-[35px] cursor-default grid grid-cols-[35%_65%] bg-gradient-to-tr from-yellow-200 via-yellow-300 to-yellow-400 shadow border border-white items-center justify-center rounded-md"
                                     >
                                         <span className="text-white text-shadow-black font-medium flex items-center justify-center border-r border-white">
                                             1
@@ -175,7 +175,6 @@ const ProductDetailPage = () => {
                                             1
                                         </span>
                                     </div>
-
                                 </div>
                             </div>
                             <div className="w-full h-[65px] grid grid-cols-[20%_80%] gap-3">
@@ -193,7 +192,7 @@ const ProductDetailPage = () => {
                                     <div className="h-full flex items-center gap-3">
                                         <div
                                             title="Thẻ cấp 1 (Hệ Thổ)"
-                                            className="w-[65px] h-[35px] cursor-pointer grid grid-cols-[35%_65%] bg-gradient-to-tr from-yellow-200 via-yellow-300 to-yellow-400 shadow border border-white items-center justify-center rounded-md"
+                                            className="w-[65px] h-[35px] cursor-default grid grid-cols-[35%_65%] bg-gradient-to-tr from-yellow-200 via-yellow-300 to-yellow-400 shadow border border-white items-center justify-center rounded-md"
                                         >
                                             <span className="text-white text-shadow-black font-medium flex items-center justify-center border-r border-white">
                                                 1
@@ -205,7 +204,7 @@ const ProductDetailPage = () => {
 
                                         <div
                                             title="Thẻ cấp 2 (Hệ Hỏa)"
-                                            className="w-[65px] h-[35px] cursor-pointer grid grid-cols-[35%_65%] bg-gradient-to-tr from-red-200 via-red-300 to-red-400 shadow border border-white items-center justify-center rounded-md"
+                                            className="w-[65px] h-[35px] cursor-default grid grid-cols-[35%_65%] bg-gradient-to-tr from-red-200 via-red-300 to-red-400 shadow border border-white items-center justify-center rounded-md"
                                         >
                                             <span className="text-white text-shadow-black font-medium flex items-center justify-center border-r border-white">
                                                 2
@@ -217,7 +216,7 @@ const ProductDetailPage = () => {
 
                                         <div
                                             title="Thẻ cấp 3 (Hệ Thủy)"
-                                            className="w-[65px] h-[35px] cursor-pointer grid grid-cols-[35%_65%] bg-gradient-to-tr from-blue-200 via-blue-300 to-blue-400 shadow border border-white items-center justify-center rounded-md"
+                                            className="w-[65px] h-[35px] cursor-default grid grid-cols-[35%_65%] bg-gradient-to-tr from-blue-200 via-blue-300 to-blue-400 shadow border border-white items-center justify-center rounded-md"
                                         >
                                             <span className="text-white text-shadow-black font-medium flex items-center justify-center border-r border-white">
                                                 3
@@ -229,7 +228,7 @@ const ProductDetailPage = () => {
 
                                         <div
                                             title="Thẻ cấp 4 (Hệ Mộc)"
-                                            className="w-[65px] h-[35px] cursor-pointer grid grid-cols-[35%_65%] bg-gradient-to-tr from-green-200 via-green-300 to-green-400 shadow border border-white items-center justify-center rounded-md"
+                                            className="w-[65px] h-[35px] cursor-default grid grid-cols-[35%_65%] bg-gradient-to-tr from-green-200 via-green-300 to-green-400 shadow border border-white items-center justify-center rounded-md"
                                         >
                                             <span className="text-white text-shadow-black font-medium flex items-center justify-center border-r border-white">
                                                 4
@@ -241,7 +240,7 @@ const ProductDetailPage = () => {
 
                                         <div
                                             title="Thẻ cấp 5 (Hệ Kim)"
-                                            className="w-[65px] h-[35px] cursor-pointer grid grid-cols-[35%_65%] bg-gradient-to-tr from-red-50 via-red-100 to-red-200 shadow border border-white items-center justify-center rounded-md"
+                                            className="w-[65px] h-[35px] cursor-default grid grid-cols-[35%_65%] bg-gradient-to-tr from-red-50 via-red-100 to-red-200 shadow border border-white items-center justify-center rounded-md"
                                         >
                                             <span className="text-white text-shadow-black font-medium flex items-center justify-center border-r border-white">
                                                 5
