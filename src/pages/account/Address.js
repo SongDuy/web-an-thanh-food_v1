@@ -10,6 +10,8 @@ import PhoneIcon from '@mui/icons-material/Phone';
 import HomeWorkIcon from '@mui/icons-material/HomeWork';
 import VerifiedOutlinedIcon from "@mui/icons-material/VerifiedOutlined";
 import ClearIcon from '@mui/icons-material/Clear';
+import EditIcon from '@mui/icons-material/Edit';
+import DeleteForeverIcon from '@mui/icons-material/DeleteForever';
 
 const AccountAddressPage = () => {
     const [openSearch, setOpenSearch] = useState(false);
@@ -28,7 +30,6 @@ const AccountAddressPage = () => {
     const [phoneVerified, setPhoneVerified] = useState(false);
 
     // Viết hoa chữ cái đầu ở ô nhập họ và tên
-
     const capitalizeName = (str) => {
         return str
             .toLowerCase()
@@ -143,38 +144,150 @@ const AccountAddressPage = () => {
                 </div>
 
                 <div className="w-full h-[555px] grid grid-cols-11 bg-white rounded-md border">
-                    <div className="col-span-7 px-4 py-3 border-r">
-                        <div className="w-full">
+                    <div className="col-span-7 pl-4 pr-3 pt-4 border-r">
+                        <div className="w-full ">
                             <h2 className="text-lg text-gray-500">
                                 Địa chỉ đã lưu
                             </h2>
                         </div>
 
-                        <div className="w-full py-4">
+                        {/* Nội dung địa chỉ đã lưu */}
+                        <div className="w-full h-[463px] pr-3 my-5 overflow-y-scroll scrollbar-thin scrollbar-thumb-gray-200 scrollbar-track-gray-100 scrollbar-thumb-rounded-full scrollbar-track-rounded-full">
+                            <div className="w-full flex flex-col gap-3 pb-5">
+                                <div className="w-full h-[145px] px-4 pt-3 pb-4 flex flex-col border shadow rounded-lg">
+                                    <div className="w-full flex items-center gap-3">
+                                        <HomeWorkIcon className="text-blue-500" />
 
-                            <div className="w-full border rounded-lg p-4 flex gap-3">
-                                <HomeWorkIcon className="text-blue-500" />
-                                <div>
-                                    <div className="flex items-center gap-2">
-                                        <span className="font-medium">
-                                            Nguyễn Văn A
-                                        </span>
-                                        <span className="text-sm text-gray-500">
-                                            | 0909 123 456
-                                        </span>
-                                        <span className="text-xs px-2 py-0.5 rounded bg-blue-50 text-blue-600 border">
-                                            Mặc định
-                                        </span>
+                                        <div className="flex items-center gap-2">
+                                            <span className="text-black font-medium">Nguyễn Văn A</span>
+                                            <span className="text-gray-400 border-l-2 border-gray-300 pl-2">090 1234567</span>
+                                        </div>
                                     </div>
-                                    <p className="text-sm text-gray-600 mt-1">
-                                        123 Nguyễn Trãi, Quận 1, TP.HCM
-                                    </p>
+
+                                    <div className="w-full h-[42px] mt-1 overflow-y-scroll scrollbar-thin scrollbar-thumb-gray-200 scrollbar-track-gray-100 scrollbar-thumb-rounded-full scrollbar-track-rounded-full">
+                                        <p className="w-full text-sm text-gray-600">
+                                            123 Nguyễn Trãi, Quận 1, TP.HCM
+                                            123 Nguyễn Trãi, Quận 1, TP.HCM
+                                            123 Nguyễn Trãi, Quận 1, TP.HCM
+                                            123 Nguyễn Trãi, Quận 1, TP.HCM
+                                            123 Nguyễn Trãi, Quận 1, TP.HCM
+                                            123 Nguyễn Trãi, Quận 1, TP.HCM
+                                            123 Nguyễn Trãi, Quận 1, TP.HCM
+                                            123 Nguyễn Trãi, Quận 1, TP.HCM
+                                            123 Nguyễn Trãi, Quận 1, TP.HCM
+                                            123 Nguyễn Trãi, Quận 1, TP.HCM
+                                            123 Nguyễn Trãi, Quận 1, TP.HCM
+                                            123 Nguyễn Trãi, Quận 1, TP.HCM
+                                        </p>
+                                    </div>
+
+                                    {/* Buttons dưới cùng */}
+                                    <div className="mt-auto flex gap-3">
+                                        <button className="h-[35px] flex items-center gap-1 pl-2.5 pr-3 text-sm font-medium rounded border-2 border-blue-400 text-blue-500 hover:text-blue-600 transition">
+                                            <EditIcon fontSize="small" />
+                                            <span>Chỉnh sửa</span>
+                                        </button>
+
+                                        <button className="h-[35px] flex items-center px-4 text-sm font-medium rounded shadow border-2 border-purple-100 text-purple-700 bg-purple-50 hover:bg-gray-100 transition">
+                                            Mặc định
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div className="w-full h-[145px] px-4 pt-3 pb-4 flex flex-col border shadow rounded-lg ">
+                                    <div className="w-full flex items-center gap-3">
+                                        <HomeWorkIcon className="text-blue-500" />
+
+                                        <div className="flex items-center gap-2">
+                                            <span className="text-black font-medium">Nguyễn Văn A</span>
+                                            <span className="text-gray-400 border-l-2 border-gray-300 pl-2">090 1234567</span>
+                                        </div>
+                                    </div>
+
+                                    <div className="w-full h-[42px] mt-1 overflow-y-scroll scrollbar-thin scrollbar-thumb-gray-200 scrollbar-track-gray-100 scrollbar-thumb-rounded-full scrollbar-track-rounded-full">
+                                        <p className="w-full text-sm text-gray-600">
+                                            123 Nguyễn Trãi, Quận 1, TP.HCM
+                                            123 Nguyễn Trãi, Quận 1, TP.HCM
+                                            123 Nguyễn Trãi, Quận 1, TP.HCM
+                                            123 Nguyễn Trãi, Quận 1, TP.HCM
+                                            123 Nguyễn Trãi, Quận 1, TP.HCM
+                                            123 Nguyễn Trãi, Quận 1, TP.HCM
+                                            123 Nguyễn Trãi, Quận 1, TP.HCM
+                                            123 Nguyễn Trãi, Quận 1, TP.HCM
+                                            123 Nguyễn Trãi, Quận 1, TP.HCM
+                                            123 Nguyễn Trãi, Quận 1, TP.HCM
+                                            123 Nguyễn Trãi, Quận 1, TP.HCM
+                                            123 Nguyễn Trãi, Quận 1, TP.HCM
+                                        </p>
+                                    </div>
+
+                                    {/* Buttons dưới cùng */}
+                                    <div className="mt-auto flex gap-3">
+                                        <button className="h-[35px] flex items-center gap-1 pl-2.5 pr-3 text-sm font-medium rounded border-2 border-blue-400 text-blue-500 hover:text-blue-600 transition">
+                                            <EditIcon fontSize="small" />
+                                            <span>Chỉnh sửa</span>
+                                        </button>
+
+                                        <button className="h-[35px] flex items-center gap-1 pl-2 pr-3 text-sm font-medium rounded border-2 border-red-400 text-red-500 hover:text-red-600 transition">
+                                            <DeleteForeverIcon fontSize="small" />
+                                            <span>Xóa</span>
+                                        </button>
+
+                                        <button className="h-[35px] flex items-center px-4 text-sm font-medium rounded shadow bg-purple-50 text-purple-700 border-2 border-purple-100 hover:bg-gray-100 transition">
+                                            Đặt làm mặc định
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div className="w-full h-[145px] px-4 pt-3 pb-4 flex flex-col border shadow rounded-lg ">
+                                    <div className="w-full flex items-center gap-3">
+                                        <HomeWorkIcon className="text-blue-500" />
+
+                                        <div className="flex items-center gap-2">
+                                            <span className="text-black font-medium">Nguyễn Văn A</span>
+                                            <span className="text-gray-400 border-l-2 border-gray-300 pl-2">090 1234567</span>
+                                        </div>
+                                    </div>
+
+                                    <div className="w-full h-[42px] mt-1 overflow-y-scroll scrollbar-thin scrollbar-thumb-gray-200 scrollbar-track-gray-100 scrollbar-thumb-rounded-full scrollbar-track-rounded-full">
+                                        <p className="w-full text-sm text-gray-600">
+                                            123 Nguyễn Trãi, Quận 1, TP.HCM
+                                            123 Nguyễn Trãi, Quận 1, TP.HCM
+                                            123 Nguyễn Trãi, Quận 1, TP.HCM
+                                            123 Nguyễn Trãi, Quận 1, TP.HCM
+                                            123 Nguyễn Trãi, Quận 1, TP.HCM
+                                            123 Nguyễn Trãi, Quận 1, TP.HCM
+                                            123 Nguyễn Trãi, Quận 1, TP.HCM
+                                            123 Nguyễn Trãi, Quận 1, TP.HCM
+                                            123 Nguyễn Trãi, Quận 1, TP.HCM
+                                            123 Nguyễn Trãi, Quận 1, TP.HCM
+                                            123 Nguyễn Trãi, Quận 1, TP.HCM
+                                            123 Nguyễn Trãi, Quận 1, TP.HCM
+                                        </p>
+                                    </div>
+
+                                    {/* Buttons dưới cùng */}
+                                    <div className="mt-auto flex gap-3">
+                                        <button className="h-[35px] flex items-center gap-1 pl-2.5 pr-3 text-sm font-medium rounded border-2 border-blue-400 text-blue-500 hover:text-blue-600 transition">
+                                            <EditIcon fontSize="small" />
+                                            <span>Chỉnh sửa</span>
+                                        </button>
+
+                                        <button className="h-[35px] flex items-center gap-1 pl-2 pr-3 text-sm font-medium rounded border-2 border-red-400 text-red-500 hover:text-red-600 transition">
+                                            <DeleteForeverIcon fontSize="small" />
+                                            <span>Xóa</span>
+                                        </button>
+
+                                        <button className="h-[35px] flex items-center px-4 text-sm font-medium rounded shadow bg-purple-50 text-purple-700 border-2 border-purple-100 hover:bg-gray-100 transition">
+                                            Đặt làm mặc định
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div className="col-span-4 px-4 py-3 border-l">
+                    <div className="col-span-4 px-4 pt-4 border-l">
                         {/* RIGHT */}
                         <div className="w-full">
                             <h2 className="text-lg text-gray-500">
@@ -218,7 +331,6 @@ const AccountAddressPage = () => {
                                                 ? "border border-red-500 focus:ring-red-400"
                                                 : "border border-gray-300 focus:ring-blue-400"
                                             }`}
-
                                     />
 
                                     {fullName && (
@@ -378,9 +490,8 @@ const AccountAddressPage = () => {
                                         autoComplete="shipping street-address"
                                         minLength={10}
                                         maxLength={300}
-                                        className="w-full h-[90px] border rounded-md px-2.5 py-2 resize-none overflow-y-auto outline-none focus:ring-1 focus:ring-blue-400"
+                                        className="w-full h-[90px] border rounded-md pl-2.5 pr-1.5 py-2 resize-none overflow-y-auto outline-none focus:ring-1 focus:ring-blue-400"
                                     />
-
                                 </div>
                             </div>
 

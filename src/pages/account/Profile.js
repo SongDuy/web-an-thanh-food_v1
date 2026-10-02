@@ -126,7 +126,7 @@ const AccountProfilePage = () => {
             width: "1.5px",
             height: "18px",
             backgroundColor: "#d1d5db",
-            margin: "0 6px",
+            margin: "0 0",
             alignSelf: "center",
         }),
 
@@ -182,7 +182,7 @@ const AccountProfilePage = () => {
                 </div>
 
                 <div className="w-full h-[555px] grid grid-cols-11 bg-white rounded-md border">
-                    <div className="col-span-7 px-4 py-3 border-r">
+                    <div className="col-span-7 px-4 py-4 border-r">
                         <div className="w-full">
                             <h2 className="text-lg text-gray-500">
                                 Thông tin cá nhân
@@ -388,7 +388,7 @@ const AccountProfilePage = () => {
                         </div>
                     </div>
 
-                    <div className="col-span-4 px-4 py-3 border-l">
+                    <div className="col-span-4 px-4 py-4 border-l">
                         <div className="w-full h-full flex flex-col gap-[28px]">
                             <div className="w-full">
                                 <h2 className="text-lg text-gray-500">
@@ -403,7 +403,7 @@ const AccountProfilePage = () => {
 
                                     <button
                                         onClick={() => setShowEditEmail(v => !v)}
-                                        className="ml-auto h-8 px-3 rounded border-2 border-blue-400 text-sm font-medium text-blue-500 hover:text-blue-600"
+                                        className="ml-auto h-[35px] px-4 rounded border-2 border-blue-400 text-sm font-medium text-blue-500 hover:text-blue-600 transition"
                                     >
                                         Cập nhật
                                     </button>
@@ -460,7 +460,7 @@ const AccountProfilePage = () => {
 
                                     <button
                                         onClick={() => setShowEditPassword(v => !v)}
-                                        className="ml-auto h-8 px-3 rounded border-2 border-blue-400 text-sm font-medium text-blue-500 hover:text-blue-600"
+                                        className="ml-auto h-[35px] px-4 rounded border-2 border-blue-400 text-sm font-medium text-blue-500 hover:text-blue-600 transition"
                                     >
                                         Cập nhật
                                     </button>

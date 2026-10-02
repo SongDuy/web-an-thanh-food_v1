@@ -58,13 +58,9 @@ const ProductCard = ({ product, index }) => {
                 {product.unit} * {product.weight}
               </span>
             </div>
-            {/* <span className="text-sm font-medium text-blue-700">
-              {product.unit} * {product.weight}
-            </span> */}
           </div>
 
           {/* Nút bấm: Sẽ luôn nằm ở đáy nhờ cấu trúc flex-col */}
-
           <div className="mt-auto grid grid-cols-2 gap-3 w-full">
             <div className="w-full h-full flex items-center justify-center bg-gradient-to-tr from-gray-100 via-red-50 to-red-100 shadow border text-black text-md px-1 py-1 rounded transition-colors font-medium">
               {Number(product.stock).toLocaleString("en-US")}

@@ -14,7 +14,7 @@ const AdminLayout = ({ children, menuItems, isTitle, handleNavigation, mockAdmin
                     </div>
 
                     <div className="w-full px-2">
-                        <div className="w-full h-[calc(100vh-120px)] px-3 my-5 overflow-y-auto scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-200 scrollbar-thumb-rounded-full">
+                        <div className="w-full h-[calc(100vh-120px)] px-3 my-5 overflow-y-auto scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-200 scrollbar-thumb-rounded-full scrollbar-track-rounded-full">
                             <ul className="grid grid-cols-1 gap-2 pb-5">
                                 {menuItems.map((item) => (
                                     <li
