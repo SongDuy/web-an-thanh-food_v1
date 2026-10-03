@@ -511,7 +511,8 @@ const Search = ({ onClose }) => {
                                     <div className="flex gap-3 text-xs font-medium">
                                         <div className="flex items-center gap-1 text-yellow-500">
                                             <StarIcon fontSize="inherit" />
-                                            {product.rating}
+                                            {/* {product.rating} */}
+                                            {Number(product.rating).toFixed(1)}
                                         </div>
 
                                         <div

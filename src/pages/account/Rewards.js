@@ -36,11 +36,11 @@ const AccountRewardsPage = () => {
 
     // danh sách thẻ
     const [cardLevels, setCardLevels] = useState([
-        { element: "tho", title: "Thẻ Hệ Thổ", cards: [0, 2, 0, 0, 0] },
-        { element: "hoa", title: "Thẻ Hệ Hỏa", cards: [1, 0, 0, 0, 0] },
-        { element: "thuy", title: "Thẻ Hệ Thủy", cards: [1, 0, 0, 0, 0] },
-        { element: "moc", title: "Thẻ Hệ Mộc", cards: [0, 2, 0, 0, 0] },
-        { element: "kim", title: "Thẻ Hệ Kim", cards: [0, 0, 1, 0, 0] },
+        { element: "tho", title: "Thẻ Hệ Thổ", cards: [4, 2, 3, 0, 0] },
+        { element: "hoa", title: "Thẻ Hệ Hỏa", cards: [1, 6, 0, 0, 0] },
+        { element: "thuy", title: "Thẻ Hệ Thủy", cards: [7, 3, 4, 0, 0] },
+        { element: "moc", title: "Thẻ Hệ Mộc", cards: [3, 2, 4, 0, 0] },
+        { element: "kim", title: "Thẻ Hệ Kim", cards: [0, 5, 5, 3, 0] },
     ]);
 
     //Hệ 
