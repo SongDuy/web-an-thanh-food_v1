@@ -94,10 +94,17 @@ const ProductMainInfo = () => {
 
             {/* Lượt mua */}
             <div className="w-full h-[65px] grid grid-cols-[20%_80%] gap-3">
-              <div className="w-full h-full flex flex-col items-start justify-center">
+              {/* <div className="w-full h-full flex flex-col items-start justify-center">
                 <span className="text-md text-gray-500">Lượt mua</span>
                 <span className="text-md text-gray-500">Thẻ cấp 1</span>
+              </div> */}
+
+              <div className="w-full h-full">
+                <span className="w-full h-full text-md text-gray-500 flex items-center">
+                  Lượt mua
+                </span>
               </div>
+
               <div className="h-full text-md text-black flex items-center gap-2">
                 <ShoppingBagOutlinedIcon />
                 <div
@@ -112,10 +119,17 @@ const ProductMainInfo = () => {
 
             {/* Thẻ của tôi */}
             <div className="w-full h-[65px] grid grid-cols-[20%_80%] gap-3">
-              <div className="w-full h-full flex flex-col items-start justify-center">
+              {/* <div className="w-full h-full flex flex-col items-start justify-center">
                 <span className="text-md text-gray-500">Thẻ của tôi</span>
                 <span className="text-md text-gray-500">Đang có</span>
+              </div> */}
+
+              <div className="w-full h-full">
+                <span className="w-full h-full text-md text-gray-500 flex items-center">
+                  Thẻ của tôi
+                </span>
               </div>
+
               <div className="h-full text-md text-black flex items-center gap-2">
                 <LoyaltyOutlinedIcon />
                 <div className="w-full h-full flex items-center gap-3">
